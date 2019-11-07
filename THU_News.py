@@ -31,7 +31,7 @@ def get_Hot(page_index):
         head = ["No","Title"]
         for i in name_list:
             s = i.find("a",{"class":"jiequ"}).string
-            dic = {"No":k,"title":s.string}
+            dic = {"No":k,"Title":s.string}
             k = k+1
             rows.append(dic)
     print("Write CSV file...")
